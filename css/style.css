@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "balqis";
+  src: url("../fonts/balqis.woff2") format("woff2"), url("../fonts/balqis.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-LightItalic";
+  src: url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2"), url("../fonts/RobotoCondensed-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+bady {
+  font-family: "RobotoCondensed-Light";
+  font-size: 18px;
+  line-height: 1.16;
+  color: #000;
+}
+
+.wrapper {
+  width: 1980px;
+  margin: 0 auto;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+}
+
+.header__img {
+  max-width: 100%;
+}
+
+.header__body {
+  position: absolute;
+  top: 252px;
+  left: 453px;
+}
+
+.header__title {
+  font-family: "balqis";
+  font-size: 250px;
+  line-height: 1;
+  padding-left: 80px;
+}
+
+.header__text {
+  font-family: "RobotoCondensed-LightItalic";
+  font-size: 56px;
+  line-height: 1.17;
+  text-align: end;
+  margin-top: -20px;
+  padding-right: 90px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 72px;
+  left: 360px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list > * + * {
+  margin-left: 52px;
+}
+
+.menu__list-link {
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 1.16;
+}
+
+.menu__list-link:hover {
+  text-decoration: underline;
+}
+
+.header-phone {
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 1.16;
+}
+
+.header-phone::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/icons/icons-phone.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
