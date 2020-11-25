@@ -1,7 +1,7 @@
 @font-face {
   font-family: "balqis";
   src: url("../fonts/balqis.woff2") format("woff2"), url("../fonts/balqis.woff") format("woff");
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -78,6 +78,10 @@ body {
   .container {
     max-width: 300px;
   }
+}
+
+.page-section {
+  margin: 200px 0;
 }
 
 .header {
@@ -273,4 +277,68 @@ body {
   .header-phone {
     font-size: 18px;
   }
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lawngreen;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__container {
+  max-width: 1230px;
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__body {
+  padding-left: 55px;
+  width: 40%;
+}
+
+.about__content-text {
+  font-family: "RobotoCondensed-Light";
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.about__content-bold {
+  font-family: "RobotoCondensed-Regular";
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.title-text {
+  max-width: 330px;
+}
+
+.title-text__title {
+  font-family: "balqis";
+  font-size: 96px;
+  line-height: 128px;
+  color: #e2ab3f;
+}
+
+.title-text__subtittle {
+  font-family: "RobotoCondensed-LightItalic";
+  font-size: 24px;
+  line-height: 28px;
+  text-align: end;
+  margin-top: -30px;
+  margin-right: -80px;
 }

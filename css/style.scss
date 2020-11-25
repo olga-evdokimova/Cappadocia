@@ -1,7 +1,7 @@
 @font-face {
     font-family: "balqis";
     src: url("../fonts/balqis.woff2") format("woff2"), url("../fonts/balqis.woff") format("woff");
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -59,9 +59,13 @@ body {
         max-width: 400px;
     }
     @media (max-width: 350px) {
-        max-width:300px;
+        max-width: 300px;
     }
 }
+.page-section {
+    margin: 200px 0;
+}
+//====SECTION==HEADER=========
 .header {
     position: relative;
     &__inner {
@@ -71,7 +75,7 @@ body {
         transform: translateX(-50%);
         @media (max-width: 350px) {
             top: 50px;
-         }
+        }
     }
     &__img {
         // min-height: 1080px;
@@ -99,13 +103,13 @@ body {
             font-size: 100px;
         }
         @media (max-width: 480px) {
-         font-size: 80px;
+            font-size: 80px;
         }
         @media (max-width: 350px) {
-           font-size: 64px;
+            font-size: 64px;
         }
     }
-    
+
     &__text {
         font-family: "RobotoCondensed-LightItalic";
         font-size: 56px;
@@ -123,8 +127,8 @@ body {
             padding-right: 7%;
         }
         @media (max-width: 480px) {
-         font-size: 18px;
-         margin-top: -10px;
+            font-size: 18px;
+            margin-top: -10px;
         }
     }
 
@@ -137,12 +141,11 @@ body {
         }
         @media (max-width: 350px) {
             margin-bottom: 100px;
-         }
+        }
     }
 }
 
 .menu {
-  
     &__list {
         display: flex;
         @media (max-width: 767px) {
@@ -154,12 +157,12 @@ body {
         margin-left: 52px;
         @media (max-width: 350px) {
             margin-left: 40px;
-         }
+        }
     }
-   
+
     &__list-item {
     }
-   
+
     &__list-link {
         font-family: "RobotoCondensed-Regular";
         font-size: 24px;
@@ -188,12 +191,126 @@ body {
         background-size: initial;
         @media (max-width: 350px) {
             vertical-align: -10px;
-         }
+        }
     }
     @media (max-width: 767px) {
         text-align: center;
     }
     @media (max-width: 350px) {
         font-size: 18px;
-     }
+    }
 }
+//====SECTION==ABOUT=========
+.about {
+    &__inner {
+        display: flex;
+        // overflow: hidden;
+        background-color: lawngreen;
+        justify-content: space-between;
+        
+    }
+    &__content {
+        flex: 0 0 100%;
+        display: flex;
+    }
+    
+    &__container {
+        max-width: 1230px;
+        margin: auto 0;
+        display: flex;
+    }
+    &__body {
+        padding-left: 55px;
+        width: 40%;
+    }
+
+    &__content-text {
+        font-family: "RobotoCondensed-Light";
+        font-size: 18px;
+        line-height: 21px;
+    
+        
+    }
+    
+    &__content-bold {
+        font-family: "RobotoCondensed-Regular";
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+.title-text {
+    max-width: 330px;
+    &__title {
+        font-family: "balqis";
+        font-size: 96px;
+        line-height: 128px;
+        color: #e2ab3f;
+    }
+
+    &__subtittle {
+        font-family: "RobotoCondensed-LightItalic";
+        font-size: 24px;
+        line-height: 28px;
+        text-align: end;
+        margin-top: -30px;
+        margin-right: -80px;
+    }
+}
+.slider-about {
+    &__item {
+      
+    }
+    
+}
+// //классы из slick-slider по умолчанию
+// .slick-dots {
+//     margin-top: -36px;
+//     position: relative;
+//     z-index: 3;
+//     display: flex;
+//     justify-content: center;
+//     @media (min-width: 1024px) {
+//         margin-top: -38.5px;
+//     }
+
+//     button {
+//         //обращаемся к кнопкам слайдера
+//         width: 10px;
+//         height: 10px;
+//         border-radius: 50%;
+//         font-size: 0; //убрать цифры
+//         background-color: $bg;
+//         border: none;
+//         @media (min-width: 1024px) {
+//             width: 15px;
+//             height: 15px;
+//         }
+//     }
+//     li {
+//         //располагаем кнопки по горизонтали и добавляем отступы
+//         display: inline-block;
+//         margin: 0 5px 20px 0;
+//     }
+// }
+// .slick-active button {
+//     // обращаемся к активной кнопке
+//     border: 1px solid #476e4d;
+//     background-color: transparent; //прозрачный
+// }
+// .slick-arrow {
+//     width: 56px;
+//     height: 56px;
+//     background-color: $bg;
+//     border: none;
+//     outline: none;
+//     position: absolute;
+//     right: 0;
+//     z-index: 5;
+// }
+// .slick-next {
+//     background-color: $cb;
+//     top: 50%;
+// }
+// .slick-prev {
+//     bottom: 50%;
+// }
