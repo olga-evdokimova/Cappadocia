@@ -29,14 +29,15 @@
     font-style: normal;
     font-display: swap;
 }
-bady {
+body {
     font-family: "RobotoCondensed-Light";
     font-size: 18px;
     line-height: 1.16;
     color: #000;
 }
 .wrapper {
-    width: 1980px;
+    // width: 1920px;
+    width: 100%;
     margin: 0 auto;
     min-height: 100vh;
     overflow: hidden;
@@ -45,62 +46,129 @@ bady {
     width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
+    @media (max-width: 1280px) {
+        max-width: 970px;
+    }
+    @media (max-width: 992px) {
+        max-width: 750px;
+    }
+    @media (max-width: 767px) {
+        max-width: 467px;
+    }
+    @media (max-width: 480px) {
+        max-width: 400px;
+    }
+    @media (max-width: 350px) {
+        max-width:300px;
+    }
 }
 .header {
     position: relative;
-    &__img {
-        max-width: 100%;
-    }
-    // .header__body
-    &__body {
+    &__inner {
         position: absolute;
-        top: 252px;
-        left: 453px;
+        top: 72px;
+        left: 50%;
+        transform: translateX(-50%);
+        @media (max-width: 350px) {
+            top: 50px;
+         }
     }
-    // .header__title
+    &__img {
+        // min-height: 1080px;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__body {
+    }
+
     &__title {
         font-family: "balqis";
         font-size: 250px;
         line-height: 1;
-        padding-left: 80px;
+        text-align: center;
+        @media (max-width: 1280px) {
+            font-size: 200px;
+        }
+        @media (max-width: 992px) {
+            font-size: 150px;
+        }
+        @media (max-width: 767px) {
+            font-size: 100px;
+        }
+        @media (max-width: 480px) {
+         font-size: 80px;
+        }
+        @media (max-width: 350px) {
+           font-size: 64px;
+        }
     }
-    // .header__text
+    
     &__text {
         font-family: "RobotoCondensed-LightItalic";
         font-size: 56px;
         line-height: 1.17;
         text-align: end;
         margin-top: -20px;
-        padding-right: 90px;
+        padding-right: 10%;
+        @media (max-width: 992px) {
+            font-size: 34px;
+            margin-top: -15px;
+            padding-right: 8%;
+        }
+        @media (max-width: 767px) {
+            font-size: 24px;
+            padding-right: 7%;
+        }
+        @media (max-width: 480px) {
+         font-size: 18px;
+         margin-top: -10px;
+        }
     }
-    // .header__menu
+
     &__menu {
         display: flex;
         justify-content: space-between;
-        position: absolute;
-        top: 72px;
-        left: 360px;
+        margin-bottom: 152px;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+        @media (max-width: 350px) {
+            margin-bottom: 100px;
+         }
     }
 }
 
 .menu {
-    // .menu__list
+  
     &__list {
         display: flex;
+        @media (max-width: 767px) {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
     }
     &__list > * + * {
         margin-left: 52px;
+        @media (max-width: 350px) {
+            margin-left: 40px;
+         }
     }
-    // .menu__list-item
+   
     &__list-item {
     }
-    // .menu__list-link
+   
     &__list-link {
         font-family: "RobotoCondensed-Regular";
         font-size: 24px;
         line-height: 1.16;
-        &:hover{
-            text-decoration:underline;
+        &:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
         }
     }
 }
@@ -108,15 +176,24 @@ bady {
     font-family: "RobotoCondensed-Regular";
     font-size: 24px;
     line-height: 1.16;
-    &::before{
+    &::before {
         content: "";
-        margin-right:10px;
+        margin-right: 10px;
         display: inline-block;
-        vertical-align:bottom;
-        width:30px;
-        height:30px;
-        background-image: url('../image/icons/icons-phone.svg');
+        vertical-align: bottom;
+        width: 30px;
+        height: 30px;
+        background-image: url("../image/icons/icons-phone.svg");
         background-repeat: no-repeat;
         background-size: initial;
+        @media (max-width: 350px) {
+            vertical-align: -10px;
+         }
     }
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+    @media (max-width: 350px) {
+        font-size: 18px;
+     }
 }
