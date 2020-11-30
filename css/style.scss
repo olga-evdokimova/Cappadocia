@@ -67,6 +67,9 @@ body {
     // для определения расстояний между одинаковыми секциями
     margin: 200px auto; //auto секция центрируется
     max-width: 1920px; // для большой ширины экрана слайдер и текст не разьедутся
+    @media (max-width: 992px) {
+        margin: 100px auto;
+    }
 }
 //одинаковые заголовки на странице
 .title-text {
@@ -83,14 +86,12 @@ body {
         font-size: 24px;
         line-height: 28px;
         margin-bottom: 100px;
+        @media (max-width: 992px) {
+            margin-bottom: 50px;
+        }
     }
 }
-//выделенные подзаголовки
-.bold {
-    font-family: "RobotoCondensed-Regular";
-    font-size: 18px;
-    line-height: 21px;
-}
+
 //====SECTION==HEADER=========
 .header {
     position: relative;
@@ -230,6 +231,9 @@ body {
 .about {
     &__inner {
         position: relative; //для позиционирования about__container
+        @media (max-width: 992px) {
+            position: unset;
+        }
     }
 
     &__content {
@@ -245,6 +249,22 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
+        @media (max-width: 1280px) {
+            width: 970px;
+        }
+        @media (max-width: 992px) {
+            width: 750px;
+            position: unset;
+        }
+        // @media (max-width: 767px) {
+        //     width: 467px;
+        // }
+        // @media (max-width: 480px) {
+        //     width: 400px;
+        // }
+        // @media (max-width: 350px) {
+        //     width: 300px;
+        // }
     }
 
     &__body {
@@ -255,12 +275,19 @@ body {
         flex-direction: column;
         justify-content: space-around;
         height: 100%; //контент изначально занимает не весь контейнер по высоте,растягиваем его на всю высоту
+        @media (max-width: 992px) {
+            width: 100%;
+            padding: 20px 0;
+        }
     }
 
     &__text {
         font-family: "RobotoCondensed-Light";
         font-size: 18px;
         line-height: 21px;
+        @media (max-width: 992px) {
+            padding-bottom: 10px;
+        }
     }
 
     &__list {
@@ -271,11 +298,26 @@ body {
         margin-left: 180px;
     }
 }
-
+//выделенные подзаголовки
+.bold {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 18px;
+    line-height: 21px;
+}
 //слайдер
 .about-slider {
     width: 50%; //чтоб слайдер занимал половину ширины страницы
+    @media (max-width: 992px) {
+        //слайдер занимает всю ширину страницы
+        max-width:960px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
     &__item {
+      img{
+          max-width: 100%;
+      }
     }
 }
 //классы слайдера по умолчанию
