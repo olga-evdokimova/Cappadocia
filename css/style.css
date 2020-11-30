@@ -100,9 +100,13 @@ body {
   font-family: "RobotoCondensed-LightItalic";
   font-size: 24px;
   line-height: 28px;
-  margin-top: -25px;
-  margin-left: 180px;
   margin-bottom: 100px;
+}
+
+.bold {
+  font-family: "RobotoCondensed-Regular";
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .header {
@@ -337,10 +341,9 @@ body {
   line-height: 21px;
 }
 
-.bold {
-  font-family: "RobotoCondensed-Regular";
-  font-size: 18px;
-  line-height: 21px;
+.about__subtittle-ident {
+  margin-top: -25px;
+  margin-left: 180px;
 }
 
 .about__slider {
@@ -362,4 +365,66 @@ body {
 
 .slick-next {
   right: 0;
+}
+
+.route__inner {
+  position: relative;
+}
+
+.route__content {
+  width: 50%;
+  margin-right: auto;
+}
+
+.route__container {
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.route__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.route__text {
+  margin-bottom: 20px;
+}
+
+.route__item {
+  padding: 10px 0;
+}
+
+.route__btn {
+  font-family: "RobotoCondensed-Light";
+  font-size: 24px;
+  line-height: 28px;
+  background: #ffffff;
+  border: 1px solid #e2ab3f;
+  padding: 10px 53px;
+  width: 280px;
+}
+
+.route__subtittle-ident {
+  margin-top: -25px;
+  margin-left: 245px;
+}
+
+.route__slider {
+  width: 50%;
+  margin-left: 50%;
 }

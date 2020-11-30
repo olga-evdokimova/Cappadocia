@@ -65,8 +65,8 @@ body {
 
 .page-section {
     // для определения расстояний между одинаковыми секциями
-    margin: 200px auto;//auto секция центрируется
-    max-width: 1920px;// для большой ширины экрана слайдер и текст не разьедутся
+    margin: 200px auto; //auto секция центрируется
+    max-width: 1920px; // для большой ширины экрана слайдер и текст не разьедутся
 }
 //одинаковые заголовки на странице
 .title-text {
@@ -82,10 +82,14 @@ body {
         font-family: "RobotoCondensed-LightItalic";
         font-size: 24px;
         line-height: 28px;
-        margin-top: -25px;
-        margin-left: 180px;
         margin-bottom: 100px;
     }
+}
+//выделенные подзаголовки
+.bold {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 18px;
+    line-height: 21px;
 }
 //====SECTION==HEADER=========
 .header {
@@ -249,8 +253,8 @@ body {
         padding-left: 55px;
         display: flex;
         flex-direction: column;
-       justify-content: space-around;
-       height: 100%;//контент изначально занимает не весь контейнер по высоте,растягиваем его на всю высоту
+        justify-content: space-around;
+        height: 100%; //контент изначально занимает не весь контейнер по высоте,растягиваем его на всю высоту
     }
 
     &__text {
@@ -261,12 +265,13 @@ body {
 
     &__list {
     }
+    &__subtittle-ident{//отступы у подзаголовка
+        margin-top: -25px;
+        margin-left: 180px;
+        
+    }
 }
-.bold {
-    font-family: "RobotoCondensed-Regular";
-    font-size: 18px;
-    line-height: 21px;
-}
+
 //слайдер
 .about__slider {
     width: 50%; //чтоб слайдер занимал половину ширины страницы
@@ -287,4 +292,78 @@ body {
 }
 .slick-next {
     right: 0;
+}
+//=====SECTION====ROUTE=====
+.route {
+    &__inner {
+       position: relative;
+    }
+
+    &__content {
+        width: 50%; //занимает половину контейнера
+        margin-right: auto; //располагается в левой части контейнера
+       
+    }
+
+    &__container {
+         //повторяем все свойства основного контейнера
+         width: 1230px;
+         padding: 0 15px;
+         margin: 0 auto;
+         position: absolute; //позиционирование внутри контейнера.так как у него есть ширина, 0 значение уствнавливает контент внутри контейнера не выходя за края
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+        
+    }
+       
+
+    &__body {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; //контент изначально занимает не весь контейнер по высоте,растягиваем его на всю высоту
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__list {
+    }
+&__item{
+    padding: 10px 0;
+}
+    &__btn {
+        font-family: "RobotoCondensed-Light";
+        font-size: 24px;
+        line-height: 28px;
+        background: #ffffff;
+        border: 1px solid #e2ab3f;
+        padding: 10px 53px;
+        width: 280px;
+    }
+    &__subtittle-ident{
+        //отступы у подзаголовка
+        margin-top: -25px;
+        margin-left: 245px;
+        
+    }
+}
+
+.title-text {
+    &__title {
+    }
+
+    &__subtittle {
+    }
+}
+
+.route__slider {
+    width: 50%; //чтоб слайдер занимал половину ширины страницы
+    margin-left: 50%;
+    &__item {
+    }
 }
