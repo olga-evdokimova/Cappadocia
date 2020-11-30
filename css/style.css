@@ -659,3 +659,41 @@ body {
     margin: 0 auto;
   }
 }
+
+.hotel__subtittle-ident {
+  margin-top: -25px;
+  margin-left: 120px;
+}
+
+.hotel__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotel__img-big {
+  margin-right: 100px;
+}
+
+.hotel__body {
+  margin-bottom: 40px;
+}
+
+.hotel__text {
+  margin-bottom: 20px;
+}
+
+.hotel__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel__img {
+  margin-top: 50px;
+}

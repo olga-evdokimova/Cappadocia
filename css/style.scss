@@ -478,3 +478,43 @@ body {
     &__item {
     }
 }
+//====SECTION=====HOTEL=====
+.hotel {
+   
+    &__subtittle-ident {
+        //отступы у подзаголовка
+        margin-top: -25px;
+        margin-left: 120px;
+    }
+    
+    &__inner {
+        display: flex;
+    }
+    
+    &__img-big {
+        margin-right: 100px;
+    }
+    
+    &__content {}
+    
+    &__body {
+        margin-bottom: 40px;
+    }
+   
+    &__text {
+        margin-bottom: 20px;
+    }
+    
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      
+        
+    }
+   
+    &__img {
+        margin-top: 50px;
+    }
+}
+
