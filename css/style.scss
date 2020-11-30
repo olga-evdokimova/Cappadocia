@@ -67,10 +67,10 @@ body {
     // для определения расстояний между одинаковыми секциями
     margin: 200px auto; //auto секция центрируется
     max-width: 1920px; // для большой ширины экрана слайдер и текст не разьедутся
-    @media (max-width: 992px) {
+    @media (max-width: 1280px) {
         margin: 100px auto;
     }
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
         margin: 50px auto;
     }
 }
@@ -84,6 +84,9 @@ body {
         color: #e2ab3f;
         @media (max-width: 767px) {
             font-size: 80px;
+        }
+        @media (max-width: 320px) {
+            font-size: 64px;
         }
     }
 
@@ -241,7 +244,7 @@ body {
 .about {
     &__inner {
         position: relative; //для позиционирования about__container
-        @media (max-width: 992px) {
+        @media (max-width: 1280px) {
             position: unset;
         }
     }
@@ -261,10 +264,10 @@ body {
         bottom: 0;
         @media (max-width: 1280px) {
             width: 970px;
+            position: unset;
         }
         @media (max-width: 992px) {
             width: 750px;
-            position: unset;
         }
         @media (max-width: 767px) {
             width: 467px;
@@ -272,7 +275,7 @@ body {
         @media (max-width: 480px) {
             width: 400px;
         }
-        @media (max-width: 350px) {
+        @media (max-width: 400px) {
             width: 300px;
         }
     }
@@ -285,7 +288,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
         height: 100%; //контент изначально занимает не весь контейнер по высоте,растягиваем его на всю высоту
-        @media (max-width: 992px) {
+        @media (max-width: 1280px) {
             width: 100%;
             padding: 20px 0;
         }
@@ -295,7 +298,7 @@ body {
         font-family: "RobotoCondensed-Light";
         font-size: 18px;
         line-height: 1.16;
-        @media (max-width: 992px) {
+        @media (max-width: 1280px) {
             padding-bottom: 10px;
         }
         @media (max-width: 480px) {
@@ -315,6 +318,11 @@ body {
         @media (max-width: 767px) {
             margin-left: 150px;
         }
+        @media (max-width: 320px) {
+            margin-left: 100px;
+            text-align: end;
+            margin-top: -20px;
+        }
     }
 }
 //выделенные подзаголовки
@@ -323,19 +331,19 @@ body {
     font-size: 18px;
     line-height: 21px;
 }
-//слайдер
+//======ABOUT-SLIDER=======
 .about-slider {
     width: 50%; //чтоб слайдер занимал половину ширины страницы
-
-    @media (max-width: 992px) {
+    @media (max-width: 1280px) {
         //слайдер занимает всю ширину страницы
         max-width: 960px;
         width: 100%;
         margin: 0 auto;
     }
+    
     &__item {
         img {
-            max-width: 700px;
+            max-width: 100%;
         }
     }
 }
@@ -358,10 +366,17 @@ body {
 .route {
     &__inner {
         position: relative;
+        @media (max-width: 1280px) {
+            position: unset;
+        }
     }
     &__content {
         width: 50%; //занимает половину контейнера
         margin-right: auto; //располагается в левой части контейнера
+        @media (max-width: 1280px) {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
     &__container {
         //повторяем все свойства основного контейнера
@@ -373,20 +388,54 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
+        @media (max-width: 1280px) {
+            width: 970px;
+            position: unset;
+        }
+        @media (max-width: 992px) {
+            width: 750px;
+        }
+        @media (max-width: 767px) {
+            width: 467px;
+        }
+        @media (max-width: 480px) {
+            width: 400px;
+        }
+        @media (max-width: 400px) {
+            width: 300px;
+        }
     }
     &__body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        max-height: 1095px;
         height: 100%; //контент изначально занимает не весь контейнер по высоте,растягиваем его на всю высоту
     }
     &__text {
         margin-bottom: 20px;
+        @media (max-width: 480px) {
+            margin-bottom: 10px;
+        }
     }
     &__list {
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
+    &__items {
+        @media (max-width: 1280px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
     &__item {
+        margin-bottom: 50px;
+        @media (max-width: 1280px) {
+            width: 50%;
+        }
     }
+
     &__btn {
         font-family: "RobotoCondensed-Light";
         font-size: 24px;
@@ -394,18 +443,38 @@ body {
         background: #ffffff;
         border: 1px solid #e2ab3f;
         padding: 10px 53px;
-        width: 280px;
+        max-width: 280px;
+        @media (max-width: 1280px) {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 320px) {
+            padding: 10px 40px;
+        }
     }
     &__subtittle-ident {
         //отступы у подзаголовка
         margin-top: -25px;
         margin-left: 245px;
+        @media (max-width: 767px) {
+            margin-left: 205px;
+        }
+        @media (max-width: 320px) {
+            margin-left: 165px;
+            margin-top: -20px;
+        }
     }
 }
 //====ROUT-SLIDER=============
 .route-slider {
     width: 50%; //чтоб слайдер занимал половину ширины страницы
     margin-left: 50%;
+    @media (max-width: 1280px) {
+        //слайдер занимает всю ширину страницы
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+       
+    }
     &__item {
     }
 }
