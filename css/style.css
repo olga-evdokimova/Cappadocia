@@ -74,6 +74,12 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .container {
+    max-width: 340px;
+  }
+}
+
 @media (max-width: 350px) {
   .container {
     max-width: 300px;
@@ -191,12 +197,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .header__title {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 350px) {
   .header__title {
     font-size: 64px;
   }

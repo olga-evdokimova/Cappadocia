@@ -57,7 +57,9 @@ body {
     }
     @media (max-width: 480px) {
         max-width: 400px;
-        
+    }
+    @media (max-width: 400px) {
+        max-width: 340px;
     }
     @media (max-width: 350px) {
         max-width: 300px;
@@ -144,11 +146,9 @@ body {
             font-size: 100px;
         }
         @media (max-width: 480px) {
-            font-size: 80px;
-        }
-        @media (max-width: 350px) {
             font-size: 64px;
         }
+        
     }
 
     &__text {
