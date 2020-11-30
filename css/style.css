@@ -346,7 +346,7 @@ body {
   margin-left: 180px;
 }
 
-.about__slider {
+.about-slider {
   width: 50%;
 }
 
@@ -405,10 +405,6 @@ body {
   margin-bottom: 20px;
 }
 
-.route__item {
-  padding: 10px 0;
-}
-
 .route__btn {
   font-family: "RobotoCondensed-Light";
   font-size: 24px;
@@ -424,7 +420,7 @@ body {
   margin-left: 245px;
 }
 
-.route__slider {
+.route-slider {
   width: 50%;
   margin-left: 50%;
 }

@@ -265,15 +265,15 @@ body {
 
     &__list {
     }
-    &__subtittle-ident{//отступы у подзаголовка
+    &__subtittle-ident {
+        //отступы у подзаголовка
         margin-top: -25px;
         margin-left: 180px;
-        
     }
 }
 
 //слайдер
-.about__slider {
+.about-slider {
     width: 50%; //чтоб слайдер занимал половину ширины страницы
     &__item {
     }
@@ -296,46 +296,36 @@ body {
 //=====SECTION====ROUTE=====
 .route {
     &__inner {
-       position: relative;
+        position: relative;
     }
-
     &__content {
         width: 50%; //занимает половину контейнера
         margin-right: auto; //располагается в левой части контейнера
-       
     }
-
     &__container {
-         //повторяем все свойства основного контейнера
-         width: 1230px;
-         padding: 0 15px;
-         margin: 0 auto;
-         position: absolute; //позиционирование внутри контейнера.так как у него есть ширина, 0 значение уствнавливает контент внутри контейнера не выходя за края
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-        
+        //повторяем все свойства основного контейнера
+        width: 1230px;
+        padding: 0 15px;
+        margin: 0 auto;
+        position: absolute; //позиционирование внутри контейнера.так как у него есть ширина, 0 значение уствнавливает контент внутри контейнера не выходя за края
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
-       
-
     &__body {
-        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%; //контент изначально занимает не весь контейнер по высоте,растягиваем его на всю высоту
     }
-
     &__text {
         margin-bottom: 20px;
     }
-
     &__list {
     }
-&__item{
-    padding: 10px 0;
-}
+    &__item {
+    }
     &__btn {
         font-family: "RobotoCondensed-Light";
         font-size: 24px;
@@ -345,23 +335,14 @@ body {
         padding: 10px 53px;
         width: 280px;
     }
-    &__subtittle-ident{
+    &__subtittle-ident {
         //отступы у подзаголовка
         margin-top: -25px;
         margin-left: 245px;
-        
     }
 }
-
-.title-text {
-    &__title {
-    }
-
-    &__subtittle {
-    }
-}
-
-.route__slider {
+//====ROUT-SLIDER=============
+.route-slider {
     width: 50%; //чтоб слайдер занимал половину ширины страницы
     margin-left: 50%;
     &__item {
