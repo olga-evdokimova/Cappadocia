@@ -62,8 +62,30 @@ body {
         max-width: 300px;
     }
 }
+
 .page-section {
-    margin: 200px 0;
+    // для определения расстояний между одинаковыми секциями
+    margin: 200px auto;//auto секция центрируется
+    max-width: 1920px;// для большой ширины экрана слайдер и текст не разьедутся
+}
+//одинаковые заголовки на странице
+.title-text {
+    display: inline-block;
+    &__title {
+        font-family: "balqis";
+        font-size: 96px;
+        line-height: 128px;
+        color: #e2ab3f;
+    }
+
+    &__subtittle {
+        font-family: "RobotoCondensed-LightItalic";
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: -25px;
+        margin-left: 180px;
+        margin-bottom: 100px;
+    }
 }
 //====SECTION==HEADER=========
 .header {
@@ -203,114 +225,66 @@ body {
 //====SECTION==ABOUT=========
 .about {
     &__inner {
-        display: flex;
-        // overflow: hidden;
-        background-color: lawngreen;
-        justify-content: space-between;
-        
-    }
-    &__content {
-        flex: 0 0 100%;
-        display: flex;
-    }
-    
-    &__container {
-        max-width: 1230px;
-        margin: auto 0;
-        display: flex;
-    }
-    &__body {
-        padding-left: 55px;
-        width: 40%;
+        position: relative; //для позиционирования about__container
     }
 
-    &__content-text {
+    &__content {
+    }
+
+    &__container {
+        //повторяем все свойства основного контейнера
+        width: 1230px;
+        padding: 0 15px;
+        margin: 0 auto;
+        position: absolute; //позиционирование внутри контейнера.так как у него есть ширина, 0 значение уствнавливает контент внутри контейнера не выходя за края
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__body {
+        width: 50%; //занимает половину контейнера
+        margin-left: auto; //располагается в правой части контейнера
+        padding-left: 55px;
+        display: flex;
+        flex-direction: column;
+       justify-content: space-around;
+       height: 100%;//контент изначально занимает не весь контейнер по высоте,растягиваем его на всю высоту
+    }
+
+    &__text {
         font-family: "RobotoCondensed-Light";
         font-size: 18px;
         line-height: 21px;
-    
-        
-    }
-    
-    &__content-bold {
-        font-family: "RobotoCondensed-Regular";
-        font-size: 18px;
-        line-height: 21px;
-    }
-}
-.title-text {
-    max-width: 330px;
-    &__title {
-        font-family: "balqis";
-        font-size: 96px;
-        line-height: 128px;
-        color: #e2ab3f;
     }
 
-    &__subtittle {
-        font-family: "RobotoCondensed-LightItalic";
-        font-size: 24px;
-        line-height: 28px;
-        text-align: end;
-        margin-top: -30px;
-        margin-right: -80px;
+    &__list {
     }
 }
-.slider-about {
+.bold {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 18px;
+    line-height: 21px;
+}
+//слайдер
+.about__slider {
+    width: 50%; //чтоб слайдер занимал половину ширины страницы
     &__item {
-      
     }
-    
 }
-// //классы из slick-slider по умолчанию
-// .slick-dots {
-//     margin-top: -36px;
-//     position: relative;
-//     z-index: 3;
-//     display: flex;
-//     justify-content: center;
-//     @media (min-width: 1024px) {
-//         margin-top: -38.5px;
-//     }
+//классы слайдера по умолчанию
+.slick-btn {
+    position: absolute; //reletive уже прописан слайдеру по умолчанию
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    background-color: transparent; //делает фон кнопки прозрачным( по умолчанию серый)
+}
 
-//     button {
-//         //обращаемся к кнопкам слайдера
-//         width: 10px;
-//         height: 10px;
-//         border-radius: 50%;
-//         font-size: 0; //убрать цифры
-//         background-color: $bg;
-//         border: none;
-//         @media (min-width: 1024px) {
-//             width: 15px;
-//             height: 15px;
-//         }
-//     }
-//     li {
-//         //располагаем кнопки по горизонтали и добавляем отступы
-//         display: inline-block;
-//         margin: 0 5px 20px 0;
-//     }
-// }
-// .slick-active button {
-//     // обращаемся к активной кнопке
-//     border: 1px solid #476e4d;
-//     background-color: transparent; //прозрачный
-// }
-// .slick-arrow {
-//     width: 56px;
-//     height: 56px;
-//     background-color: $bg;
-//     border: none;
-//     outline: none;
-//     position: absolute;
-//     right: 0;
-//     z-index: 5;
-// }
-// .slick-next {
-//     background-color: $cb;
-//     top: 50%;
-// }
-// .slick-prev {
-//     bottom: 50%;
-// }
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}

@@ -81,7 +81,28 @@ body {
 }
 
 .page-section {
-  margin: 200px 0;
+  margin: 200px auto;
+  max-width: 1920px;
+}
+
+.title-text {
+  display: inline-block;
+}
+
+.title-text__title {
+  font-family: "balqis";
+  font-size: 96px;
+  line-height: 128px;
+  color: #e2ab3f;
+}
+
+.title-text__subtittle {
+  font-family: "RobotoCondensed-LightItalic";
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: -25px;
+  margin-left: 180px;
+  margin-bottom: 100px;
 }
 
 .header {
@@ -280,65 +301,65 @@ body {
 }
 
 .about__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: lawngreen;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.about__content {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
 }
 
 .about__container {
-  max-width: 1230px;
-  margin: auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .about__body {
+  width: 50%;
+  margin-left: auto;
   padding-left: 55px;
-  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
 }
 
-.about__content-text {
+.about__text {
   font-family: "RobotoCondensed-Light";
   font-size: 18px;
   line-height: 21px;
 }
 
-.about__content-bold {
+.bold {
   font-family: "RobotoCondensed-Regular";
   font-size: 18px;
   line-height: 21px;
 }
 
-.title-text {
-  max-width: 330px;
+.about__slider {
+  width: 50%;
 }
 
-.title-text__title {
-  font-family: "balqis";
-  font-size: 96px;
-  line-height: 128px;
-  color: #e2ab3f;
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+  background-color: transparent;
 }
 
-.title-text__subtittle {
-  font-family: "RobotoCondensed-LightItalic";
-  font-size: 24px;
-  line-height: 28px;
-  text-align: end;
-  margin-top: -30px;
-  margin-right: -80px;
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
 }
