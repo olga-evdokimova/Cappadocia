@@ -987,6 +987,12 @@ body {
   margin-top: -25px;
 }
 
+@media (max-width: 320px) {
+  .application__ident {
+    margin-top: -20px;
+  }
+}
+
 .application__ident-data {
   margin-left: 140px;
 }
@@ -999,7 +1005,7 @@ body {
 
 @media (max-width: 320px) {
   .application__ident-data {
-    margin-left: 0;
+    margin-left: -23px;
   }
 }
 
