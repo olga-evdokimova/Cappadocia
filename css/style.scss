@@ -330,7 +330,7 @@ body {
 .bold {
     font-family: "RobotoCondensed-Regular";
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.16;
 }
 //======ABOUT-SLIDER=======
 .about-slider {
@@ -440,11 +440,15 @@ body {
     &__btn {
         font-family: "RobotoCondensed-Light";
         font-size: 24px;
-        line-height: 28px;
+        line-height: 1.16;
         background: #ffffff;
         border: 1px solid #e2ab3f;
         padding: 10px 53px;
         max-width: 280px;
+        transition: all .5s;
+        &:hover{
+            background: #e2ab3f;
+        }
         @media (max-width: 1280px) {
             margin-bottom: 10px;
         }
@@ -716,7 +720,7 @@ body {
     flex-direction: column;
     font-family: "RobotoCondensed-Light";
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.16;
     &__input {
         max-width: 383px;
         height: 50px;
@@ -740,5 +744,9 @@ body {
         text-align: center;
         background: #ffffff;
         border: 1px solid #e2ab3f;
+        transition: all .5s;
+        &:hover{
+            background: #e2ab3f;
+        }
     }
 }

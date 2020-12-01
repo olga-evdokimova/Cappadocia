@@ -456,7 +456,7 @@ body {
 .bold {
   font-family: "RobotoCondensed-Regular";
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
 }
 
 .about-slider {
@@ -610,11 +610,17 @@ body {
 .route__btn {
   font-family: "RobotoCondensed-Light";
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   background: #ffffff;
   border: 1px solid #e2ab3f;
   padding: 10px 53px;
   max-width: 280px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.route__btn:hover {
+  background: #e2ab3f;
 }
 
 @media (max-width: 1280px) {
@@ -1034,7 +1040,7 @@ body {
           flex-direction: column;
   font-family: "RobotoCondensed-Light";
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
 }
 
 .form__input {
@@ -1062,4 +1068,10 @@ body {
   text-align: center;
   background: #ffffff;
   border: 1px solid #e2ab3f;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.form__btn:hover {
+  background: #e2ab3f;
 }
