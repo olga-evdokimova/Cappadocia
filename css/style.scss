@@ -148,7 +148,6 @@ body {
         @media (max-width: 480px) {
             font-size: 64px;
         }
-        
     }
 
     &__text {
@@ -556,44 +555,77 @@ body {
         margin-left: 100px;
     }
     &__inner {
-        
     }
     &__cintent {
         display: flex;
         position: relative;
-       
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
     &__items {
         width: 50%;
         padding-right: 70px;
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 0 0 50px 0;
+        }
     }
     &__text {
         margin-bottom: 50px;
+        @media (max-width: 767px){
+            margin-bottom: 30px;
+        }
     }
     &__list * {
         margin-bottom: 20px;
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
     }
     &__decor {
         position: absolute;
         top: -100px;
         right: -100px;
-      
+        @media (max-width: 767px){
+        top: 300px;
+        }
+        @media (max-width: 480px) {
+           
+        }
     }
     &__decor-small-01 {
         position: absolute;
         bottom: -125px;
-       left: -50px;
-   
+        left: -50px;
+        @media (max-width: 767px){
+            bottom: 40px;
+        }
+        @media (max-width: 480px) {
+            bottom: 80px;
+            left: 40px;
+        }
     }
     &__decor-small-02 {
         position: absolute;
         left: -100px;
         top: 150px;
+        @media (max-width: 992px) {
+            top: 400px;
+            left: -200px;
+        }
+        @media (max-width: 767px){
+            top: 30px;
+            left: -100px;
+        }
+        @media (max-width: 480px) {
+            top: 25px;
+            left: -20px;
+        }
+    }
+    &__decor-big{
+        @media (max-width: 480px) {
+          opacity: 0;
+        }
     }
 }
-
-
-
-
-
-
