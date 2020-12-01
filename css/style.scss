@@ -548,3 +548,52 @@ body {
         }
     }
 }
+//=====SECTION====PRICE====
+.price {
+    &__subtittle-ident {
+        //отступы у подзаголовка
+        margin-top: -25px;
+        margin-left: 100px;
+    }
+    &__inner {
+        
+    }
+    &__cintent {
+        display: flex;
+        position: relative;
+       
+    }
+    &__items {
+        width: 50%;
+        padding-right: 70px;
+    }
+    &__text {
+        margin-bottom: 50px;
+    }
+    &__list * {
+        margin-bottom: 20px;
+    }
+    &__decor {
+        position: absolute;
+        top: -100px;
+        right: -100px;
+      
+    }
+    &__decor-small-01 {
+        position: absolute;
+        bottom: -125px;
+       left: -50px;
+   
+    }
+    &__decor-small-02 {
+        position: absolute;
+        left: -100px;
+        top: 150px;
+    }
+}
+
+
+
+
+
+

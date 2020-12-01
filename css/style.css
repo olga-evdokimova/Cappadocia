@@ -765,3 +765,46 @@ body {
     margin-top: 20px;
   }
 }
+
+.price__subtittle-ident {
+  margin-top: -25px;
+  margin-left: 100px;
+}
+
+.price__cintent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.price__items {
+  width: 50%;
+  padding-right: 70px;
+}
+
+.price__text {
+  margin-bottom: 50px;
+}
+
+.price__list * {
+  margin-bottom: 20px;
+}
+
+.price__decor {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+}
+
+.price__decor-small-01 {
+  position: absolute;
+  bottom: -125px;
+  left: -50px;
+}
+
+.price__decor-small-02 {
+  position: absolute;
+  left: -100px;
+  top: 150px;
+}
