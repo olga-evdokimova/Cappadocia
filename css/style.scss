@@ -755,7 +755,7 @@ body {
 .footer {
     position: relative;
     &__img {
-        min-height: 100vh;
+        height: 1180px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -769,9 +769,7 @@ body {
         @media (max-width: 1280px) {
             flex-direction: column-reverse;
             align-items: center;
-        }
-        @media (max-width: 767px) {
-            top: 0;
+          
         }
     }
     &__contacts {
@@ -781,7 +779,7 @@ body {
         max-width: 356px;
         background-image: url(../image/footer/footer-contacts.png);
         background-repeat: no-repeat;
-        background-position:top  center;
+        background-position: top center;
         background-size: contain;
         margin: 0 122px;
         text-align: center;
@@ -795,15 +793,15 @@ body {
     }
     &__title {
         margin: 71px 0 10px;
-        @media (max-width: 400px){
-        margin-top: 30px;
-        font-size: 44px;
-        line-height: 1;
+        @media (max-width: 400px) {
+            margin-top: 30px;
+            font-size: 44px;
+            line-height: 1;
         }
     }
     &__tel {
         margin-bottom: 20px;
-        @media (max-width: 400px){
+        @media (max-width: 400px) {
             margin-bottom: 5px;
         }
         &::before {
@@ -820,7 +818,7 @@ body {
     }
     &__mail {
         margin-bottom: 38px;
-        @media (max-width: 400px){
+        @media (max-width: 400px) {
             margin-bottom: 25px;
             font-size: 14px;
         }
