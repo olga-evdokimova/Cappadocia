@@ -757,7 +757,7 @@ body {
 .footer {
     position: relative;
     &__img {
-        height: 1180px;
+        height: 100vh;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -768,9 +768,10 @@ body {
         left: 50%;
         transform: translateX(-50%);
         display: flex;
+        justify-content: center;
+        align-items: center; //центрируем клнтент внутри чтоб при изменении высоты экрана контент был всегда по центру
         @media (max-width: 1280px) {
             flex-direction: column-reverse;
-            align-items: center;
         }
     }
     &__contacts {
@@ -793,7 +794,11 @@ body {
         }
     }
     &__title {
-        margin: 71px 0 10px;
+        font-family: "balqis";
+        font-size: 86px;
+        line-height: 1;
+        color: #e2ab3f;
+        margin: 70px 0 40px;
         @media (max-width: 400px) {
             margin-top: 30px;
             font-size: 44px;
@@ -801,7 +806,7 @@ body {
         }
     }
     &__tel {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         @media (max-width: 400px) {
             margin-bottom: 5px;
         }
@@ -818,7 +823,7 @@ body {
         }
     }
     &__mail {
-        margin-bottom: 38px;
+        margin-bottom: 30px;
         @media (max-width: 400px) {
             margin-bottom: 25px;
             font-size: 14px;
@@ -835,40 +840,11 @@ body {
             background-size: initial;
         }
     }
-    &__icone {
-    }
-    &__link {
-        span {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-image: url("../image/footer/facebook.svg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        &::before {
-            content: "";
-            margin-right: 10px;
-            display: inline-block;
-            vertical-align: baseline;
-            width: 30px;
-            height: 30px;
-            background-image: url("../image/footer/youtube.svg");
-            background-repeat: no-repeat;
-            background-size: initial;
-        }
-        &::after {
-            content: "";
-            margin-left: 10px;
-            display: inline-block;
-            vertical-align: baseline;
-            width: 30px;
-            height: 30px;
-            background-image: url("../image/footer/instagram.svg");
-            background-repeat: no-repeat;
-            background-size: initial;
-        }
+    &__sotial-link{
+      margin: 0 7px;
+      @media (max-width: 400px){
+          margin: 0 4px;
+      }
     }
     &__slogan {
         font-family: "balqis";

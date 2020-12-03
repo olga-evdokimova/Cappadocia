@@ -1077,7 +1077,7 @@ body {
 }
 
 .footer__img {
-  height: 1180px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1092,6 +1092,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1280px) {
@@ -1100,9 +1106,6 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -1133,7 +1136,11 @@ body {
 }
 
 .footer__title {
-  margin: 71px 0 10px;
+  font-family: "balqis";
+  font-size: 86px;
+  line-height: 1;
+  color: #e2ab3f;
+  margin: 70px 0 40px;
 }
 
 @media (max-width: 400px) {
@@ -1145,7 +1152,7 @@ body {
 }
 
 .footer__tel {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 400px) {
@@ -1167,7 +1174,7 @@ body {
 }
 
 .footer__mail {
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 400px) {
@@ -1189,37 +1196,14 @@ body {
   background-size: initial;
 }
 
-.footer__link span {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-image: url("../image/footer/facebook.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.footer__sotial-link {
+  margin: 0 7px;
 }
 
-.footer__link::before {
-  content: "";
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: baseline;
-  width: 30px;
-  height: 30px;
-  background-image: url("../image/footer/youtube.svg");
-  background-repeat: no-repeat;
-  background-size: initial;
-}
-
-.footer__link::after {
-  content: "";
-  margin-left: 10px;
-  display: inline-block;
-  vertical-align: baseline;
-  width: 30px;
-  height: 30px;
-  background-image: url("../image/footer/instagram.svg");
-  background-repeat: no-repeat;
-  background-size: initial;
+@media (max-width: 400px) {
+  .footer__sotial-link {
+    margin: 0 4px;
+  }
 }
 
 .footer__slogan {
