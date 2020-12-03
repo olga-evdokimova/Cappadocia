@@ -973,60 +973,24 @@ body {
   max-width: 100%;
 }
 
-.application__ident {
+.application__title {
+  font-family: "balqis";
+  font-size: 96px;
+  line-height: .7;
+  color: #e2ab3f;
+}
+
+.application__subtittle {
   font-family: "RobotoCondensed-LightItalic";
   font-size: 24px;
   line-height: 1.16;
-  margin-top: -25px;
+  margin-bottom: 20px;
+  text-align: end;
+  margin-right: 30px;
 }
 
-@media (max-width: 320px) {
-  .application__ident {
-    margin-top: -20px;
-  }
-}
-
-.application__ident-data {
-  margin-left: 140px;
-}
-
-@media (max-width: 992px) {
-  .application__ident-data {
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 320px) {
-  .application__ident-data {
-    margin-left: -23px;
-  }
-}
-
-.application__ident-price {
-  margin-left: 120px;
-}
-
-@media (max-width: 992px) {
-  .application__ident-price {
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 320px) {
-  .application__ident-price {
-    margin-left: 0;
-  }
-}
-
-.title__price {
-  margin-top: -25px;
-  margin-left: 125px;
-}
-
-@media (max-width: 992px) {
-  .title__price {
-    margin: -25px auto 0;
-  }
+.application__title-price {
+  text-align: center;
 }
 
 .form {
