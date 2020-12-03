@@ -117,7 +117,7 @@ body {
         top: 72px;
         left: 50%;
         transform: translateX(-50%);
-        @media (max-width: 350px) {
+        @media (max-width: 767px) {
             top: 50px;
         }
     }
@@ -179,6 +179,7 @@ body {
         margin-bottom: 152px;
         @media (max-width: 767px) {
             flex-direction: column;
+            margin-bottom: 120px;
         }
         @media (max-width: 350px) {
             margin-bottom: 100px;
@@ -191,7 +192,7 @@ body {
         display: flex;
         @media (max-width: 767px) {
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
     }
     &__list > * + * {
@@ -230,10 +231,9 @@ body {
         background-image: url("../image/icons/icons-phone.svg");
         background-repeat: no-repeat;
         background-size: cover;
-        @media (max-width: 767px){
+        @media (max-width: 767px) {
             width: 25px;
             height: 25px;
-            
         }
         @media (max-width: 350px) {
             width: 20px;
@@ -347,11 +347,16 @@ body {
         width: 100%;
         margin: 0 auto;
     }
-
-    &__item {
-        img {
-            max-width: 100%;
-        }
+}
+.about__item img {
+    @media (max-width: 767px) {
+        height: 560px;
+    }
+    @media (max-width: 601px) {
+        height: 430px;
+    }
+    @media (max-width: 480px) {
+        height: 350px;
     }
 }
 //классы слайдера по умолчанию
@@ -459,7 +464,8 @@ body {
             margin-bottom: 10px;
         }
         @media (max-width: 480px) {
-            margin: 0 auto;
+            margin: 0 auto 10px;
+           
         }
         @media (max-width: 320px) {
             padding: 10px 40px;
@@ -488,7 +494,17 @@ body {
         width: 100%;
         margin: 0 auto;
     }
-    &__item {
+}
+.route__item img{
+    @media (max-width: 767px) {
+        height:878px;
+    }
+    @media (max-width: 600px) {
+       height:684px;
+    }
+    @media (max-width: 480px) {
+         height: 548px;
+       
     }
 }
 //====SECTION=====HOTEL=====
@@ -778,6 +794,7 @@ body {
         align-items: center; //центрируем клнтент внутри чтоб при изменении высоты экрана контент был всегда по центру
         @media (max-width: 1280px) {
             flex-direction: column-reverse;
+            top: 50px;
         }
     }
     &__contacts {
@@ -846,11 +863,11 @@ body {
             background-size: initial;
         }
     }
-    &__sotial-link{
-      margin: 0 7px;
-      @media (max-width: 400px){
-          margin: 0 4px;
-      }
+    &__sotial-link {
+        margin: 0 7px;
+        @media (max-width: 400px) {
+            margin: 0 4px;
+        }
     }
     &__slogan {
         font-family: "balqis";
