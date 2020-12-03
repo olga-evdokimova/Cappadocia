@@ -757,13 +757,6 @@ body {
 
 .hotel__img {
   margin-top: 50px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.hotel__img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 @media (max-width: 767px) {

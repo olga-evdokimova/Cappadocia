@@ -540,13 +540,21 @@ body {
             justify-content: center;
         }
     }
-
-    &__img {
+//свойства для картинок масштабирование при нажатии
+    // &__img {
+    //     margin-top: 50px;
+    //     transition: all 0.5s;
+    //     &:hover {
+    //         transform: scale(1.2);
+    //     }
+    //     @media (max-width: 767px) {
+    //         margin-top: 20px;
+    //     }
+    // }
+    //свойства для картинок с fancybox галереей
+     &__img {
         margin-top: 50px;
-        transition: all 0.5s;
-        &:hover {
-            transform: scale(1.2);
-        }
+        
         @media (max-width: 767px) {
             margin-top: 20px;
         }
